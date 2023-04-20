@@ -6,12 +6,23 @@
 }
 
 body {
+    background-color: $gray;
+    background-image: url('/src/assets/detalhe-fundo.svg'),
+        repeating-linear-gradient(
+        90deg,
+        $gray,
+        $gray 40px,
+        $dark-gray 40px,
+        $white 42px
+    );
+    background-repeat: no-repeat;
+    background-position: top right -20%;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: $gray;
     height: 100vh;
     width: 80%;
+    min-width: 320px;
     margin: 0 auto;
 }
 
