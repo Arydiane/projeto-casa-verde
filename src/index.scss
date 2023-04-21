@@ -17,6 +17,7 @@ body {
     );
     background-repeat: no-repeat;
     background-position: top right -20%;
+    color: $black;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -24,8 +25,4 @@ body {
     width: 80%;
     min-width: 320px;
     margin: 0 auto;
-}
-
-.title {
-    font-family: 'Elsie Swash Caps', cursive;
 }
