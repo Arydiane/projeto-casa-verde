@@ -52,7 +52,7 @@
         background-position: 16px center;
         padding-left: 50px;
         outline-color: $light-green;
-    
+        flex: 1 1 70%;
     }
 
     &-button {
@@ -60,11 +60,23 @@
         width: 194px;
         background: $yellow;
         color: $white;
+        flex: 1 1 30%;
 
         &:hover {
-            opacity: 0.5;
+            opacity: 0.6;
             cursor: pointer;
             box-shadow: 5px 5px 10px 0px $dark-green;
         }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+    }
+
+    &-error {
+        color: $red;
+        font-size: 14px;
     }
 }
