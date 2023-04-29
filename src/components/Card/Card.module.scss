@@ -1,0 +1,60 @@
+@import '../../styles/variables'; 
+@import '../../styles/mixin';
+
+.card {
+    background-color: $white;
+    width: 380px;
+    height: 200px;
+    @include shadow();
+    display:  flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    &-image {
+        height: 100%;
+        flex: 1 1 50%;
+    }
+
+    &-text {
+        flex: 1 1 50%;
+    }
+
+    &-title {
+        font-family: $font-title-highlight;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 37px;
+        padding-left: 0.5rem;
+        margin: 0 0  0.5rem 0;
+    }
+
+    &-price {
+        color: $black;
+        font-weight: bold;
+        opacity: 0.5;
+        line-height: 20px;
+        padding-left: 0.5rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    &-link {
+        color: $yellow;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin: 0;
+
+        &::after {
+            content:' →';
+            letter-spacing: 0.5rem;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            background-color: $yellow;
+            color: $white;
+        }
+    }
+}
