@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixin';
 
 .section-newsletter {
     background: url(/src/assets/planta-principal.png) right top no-repeat;
@@ -41,7 +42,7 @@
     &-container {
         display: flex;
         height: 100%;
-        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+        @include shadow();
     }
 
     &-input {
