@@ -10,10 +10,15 @@
     align-items: center;
     justify-content: flex-start;
 
+    &:hover {
+        box-shadow: 1px 1px 10px  $dark-green;
+    } 
 
     &-image {
         height: 100%;
-        flex: 1 1 50%;
+        width: max-content;
+        flex: 0 1 50%;
+        overflow: auto;
     }
 
     &-text {
