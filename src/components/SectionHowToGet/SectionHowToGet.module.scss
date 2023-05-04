@@ -30,14 +30,19 @@
         }
 
         .list {
-            list-style-image: url(/src/assets/marcador.svg);
-            list-style-position: inside;
             padding: 0;
 
             &-item {
+                display: flex;
+                align-items: center;
                 font-size: 22px;
                 line-height: 27px;
                 margin-top: 32px;
+
+                &::before {
+                    content:  url(/src/assets/marcador.svg);
+                    padding-right: 1rem;
+                }
             }
         }
     }
