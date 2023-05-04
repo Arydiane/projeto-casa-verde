@@ -1,25 +1,24 @@
 import styles from './Header.module.scss'
 import logo from '../../assets/logo.svg'
 
-export default function Header() {
-    
-    const routes = [{
-        label: "Como fazer",
-        to: '/'
-    },{
-        label: "Ofertas",
-        to: '/'
-    },{
-        label: "Depoimentos",
-        to: '/'
-    },{
-        label: "Videos",
-        to: '/'
-    },{
-        label: "Meu carrinho",
-        to: '/'
-    }];
+const routes = [{
+    label: "Como fazer",
+    to: '/'
+},{
+    label: "Ofertas",
+    to: '/'
+},{
+    label: "Depoimentos",
+    to: '/'
+},{
+    label: "Videos",
+    to: '/'
+},{
+    label: "Meu carrinho",
+    to: '/'
+}];
 
+export default function Header() {
     return (
         <header className={styles.header}>
             <a href='/'>
