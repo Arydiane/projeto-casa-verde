@@ -1,6 +1,6 @@
 @import './styles/variables';
 
-* {
+html {
     box-sizing: border-box;
 }
 
@@ -15,13 +15,21 @@ body {
         $white 42px
     );
     background-repeat: no-repeat;
-    background-position: top right -20%;
+    background-position: top center;
     color: $black;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    width: 80%;
+    margin: 0 2rem;
     min-width: 320px;
-    max-width: 1400px;
-    margin: 0 auto;
+
+    @media (min-width: $tablet-md ) {
+        background-position: top right -20%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-lg ) {
+        max-width: 1400px;
+    }
 }

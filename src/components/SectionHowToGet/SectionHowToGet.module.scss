@@ -3,17 +3,24 @@
 
 .section {
     display: flex;
+    flex-wrap: wrap;
     background-color: $white;
     @include shadow();
+    max-width: 1000px;
+    margin: 0 auto;
 
     &-image {
-        height: 440px;
-        width: auto;
+       width: 100%;
+       
+        @media (min-width: $tablet-md) {
+            width: 50%;
+        }
     }
 
     &-container {
         margin-top: 32px;
         margin-left: 2rem;
+        
         .title {
             font-size: 22px;
             font-weight: 400;

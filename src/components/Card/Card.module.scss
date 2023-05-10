@@ -3,12 +3,16 @@
 
 .card {
     background-color: $white;
-    width: 380px;
+    width: 300px;
     height: 200px;
     @include shadow();
     display:  flex;
     align-items: center;
     justify-content: flex-start;
+
+    @media (min-width: $mobile-sm) {
+        width: 380px;
+    }
 
     &:hover {
         box-shadow: 1px 1px 10px  $dark-green;
@@ -17,8 +21,12 @@
     &-image {
         height: 100%;
         width: max-content;
-        flex: 0 1 50%;
+        flex: 0 1 45%;
         overflow: auto;
+
+        @media (min-width: $mobile-sm) {
+            flex: 0 1 50%;
+        }
     }
 
     &-text {
