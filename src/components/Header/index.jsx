@@ -3,19 +3,19 @@ import logo from '../../assets/logo.svg'
 
 const routes = [{
     label: "Como fazer",
-    to: '/'
+    to: '#como-fazer'
 },{
-    label: "Ofertas",
-    to: '/'
+    label: "Nossas Plantas",
+    to: '#plantas'
 },{
     label: "Depoimentos",
-    to: '/'
+    to: '#'
 },{
     label: "Videos",
-    to: '/'
+    to: '#'
 },{
     label: "Meu carrinho",
-    to: '/'
+    to: '#'
 }];
 
 export default function Header() {
