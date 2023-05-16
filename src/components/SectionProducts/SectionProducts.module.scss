@@ -23,6 +23,24 @@
             text-align: center;
         }
     }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        gap: 1rem;
+
+        input,
+        select {
+            width: 80px;
+            border: none;
+            outline-color: $light-green;
+        }        
+    }
+
+    .alert {
+        color: $red;
+    }
     
     .list {
         display: flex;
