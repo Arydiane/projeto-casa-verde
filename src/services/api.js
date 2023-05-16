@@ -1,4 +1,4 @@
-const URL = 'https://gist.githubusercontent.com/Arydiane/041732547bac3284023491262dc5ed82/raw/ebe5bb8496f38471dc084cdea975bb6e1b64c3a6/casa-verde.json'
+const URL = 'https://gist.githubusercontent.com/Arydiane/041732547bac3284023491262dc5ed82/raw/e75ab8721dc943e458ab86f3c03e230583c6b722/casa-verde.json'
 
 export async function getProducts() {
     try {
