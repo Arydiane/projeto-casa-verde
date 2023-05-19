@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "dotenv": "^16.0.3",
     "emailjs": "^4.0.2",
     "normalize.css": "^8.0.1",
