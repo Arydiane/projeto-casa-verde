@@ -1,9 +1,10 @@
 import styles from './SectionHowToGet.module.scss'
+import plantaDestaque from '../../assets/planta-destaque.png'
 
 export default function SectionHowToGet() {
     return (
         <section className={styles.section} id='como-fazer'>
-            <img className={styles['section-image']} src='src/assets/planta-destaque.png' alt='Planta costela de adão' />
+            <img className={styles['section-image']} src={plantaDestaque} alt='Planta costela de adão' />
             <div className={styles['section-container']}>
                 <h1 className={styles.title}>Como conseguir <span className={styles['title-highlight']}>minha planta</span></h1>
                 <ul className={styles.list}>
