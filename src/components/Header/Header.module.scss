@@ -21,6 +21,7 @@
         align-items: flex-end;
         gap: 1rem;
         list-style: none;
+        padding: 0;
 
         @media (min-width: $tablet-md) {
             gap: 0;
@@ -28,10 +29,11 @@
 
         &-item {
             font-weight: bold;
+            flex-basis: content;
 
             &:not(:last-child)::after {
                 content: ' / ';
-                letter-spacing: 1rem;
+                letter-spacing: 0.5rem;
                 color: $dark-green;
                 font-weight: lighter;
             }
