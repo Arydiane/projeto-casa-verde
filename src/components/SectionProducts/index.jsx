@@ -53,7 +53,7 @@ export default function SectionProducts() {
                     <input id="price" type="number" min={0} value={priceFilter} onChange={(e) => setPriceFilter(e.target.value)} />
                 </div>
             </div>
-            {priceFilter > 0 && filteredProducts.length === 0  ? <p className={styles.alert}>Não existem produtos correspondente ao valor filtrado! Veja as opções existentes:</p> : ""}                 
+            {priceFilter > 0 && filteredProducts.length === 0  ? <p className={styles.alert}>Não há nenhum produto com valor correspondente ao filtrado! Veja as opções existentes:</p> : ""}                 
             <ul className={styles.list}>
             {
                 priceFilter > 0 && filteredProducts.length > 0
